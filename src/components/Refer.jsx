@@ -18,7 +18,7 @@ const Refer = () => {
         const token = localStorage.getItem('auth-token');
         async function getItems() {
             try {
-                const response = await axios.post('http://localhost:3000/getUserData', null, {
+                const response = await axios.post('https://referandearnbackend.onrender.com/getUserData', null, {
                     headers: {
                         Accept: 'application/form-data',
                         'auth-token': localStorage.getItem('auth-token')
