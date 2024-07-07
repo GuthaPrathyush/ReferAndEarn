@@ -7,9 +7,6 @@ import SubHeader from './SubHeader';
 
 const Home = () => {
     const navigate = useNavigate();
-    if(!localStorage.getItem('auth-token')) {
-        window.location.replace('/login');
-    }
     return (
         <>
         <SubHeader/>
