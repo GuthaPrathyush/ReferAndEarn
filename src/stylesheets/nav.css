@@ -1,0 +1,67 @@
+.NavigationBar {
+    width: 100%;
+    background-color: rgb(252, 252, 252);
+    nav {
+        background-color: rgb(252, 252, 252);
+        width: 100%;
+        box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.2);
+        height: 79.2px;
+        padding: 9.6px 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .navContainer {
+            height: 100%;
+            display: flex;
+            width: 100%;
+            button {
+                height: 40px;
+                width: 116px;
+                background-color: rgba(26, 115, 232, 1);
+                padding: 8px, 18px, 8px, 18px;
+                border-radius: 6px;
+                color: #fff;
+            }
+            .logoAndCourses {
+                flex-basis: 41.2%;
+                display: flex;
+                align-items: center;
+                gap: 35px;
+                a {
+                    height: 40px;
+                    img {
+                        height: 100%;
+                    }
+                }
+                button {
+                    .fa-solid {
+                        font-size: 12px;
+                    }
+                }
+            }
+            .loginAndTry {
+                flex-grow: 1;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                gap: 20px;
+                .webNavigation {
+                    display: flex;
+                    align-items: center;
+                    gap: 40px;
+                }
+                .LoginAndTryContainer {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    .loginBtn {
+                        width: 77px;
+                        background-color: rgba(148, 163, 184, 0.2);
+                        color: black;
+                    }
+                }
+            }
+        }
+        margin-bottom: 40px;
+    }
+}

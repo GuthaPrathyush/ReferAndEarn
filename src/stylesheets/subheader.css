@@ -1,0 +1,39 @@
+.navigationElementContainer {
+    width: 100%;
+    background-color: rgb(252, 252, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .navigationElements {
+        height: 63px;
+        width: 40.2%;
+        background-color: rgba(26, 115, 232, 0.11);
+        border-radius: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .navigationElement {
+        position: relative;
+        a {
+            text-decoration: none;
+            color: black;
+            width: 100%;
+            text-align: center;
+        }
+        cursor: pointer;
+    }
+    .navigationElement.active {
+        a {
+            color: rgba(26, 115, 232, 1);
+        }
+        a::after {
+            content: '.';
+            font-size: 35px;
+            position: absolute;
+            bottom: -20px;
+            left: calc(50% - 3.67px);
+        }
+    }
+    margin-bottom: 25px;
+}
