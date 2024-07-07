@@ -49,7 +49,7 @@ const Register = () => {
             toast.error('Confirm Password should be same as entered Password');
         }
         else {
-            const registerPromise = axios.post('http://localhost:3000/register', JSON.stringify(User), {
+            const registerPromise = axios.post('https://referandearnbackend.onrender.com/register', JSON.stringify(User), {
                 headers: {
                     Accept: "application/form-data",
                     'Content-Type': 'application/json'
