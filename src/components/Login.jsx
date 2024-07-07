@@ -36,7 +36,7 @@ const Login = () => {
             toast.error('Invalid Password');
         }
         else {
-            const loginPromise = axios.post('http://localhost:3000/login', JSON.stringify(User), {
+            const loginPromise = axios.post('https://referandearnbackend.onrender.com/login', JSON.stringify(User), {
                 headers: {
                     Accept: 'application/form-data',
                     'Content-Type': 'application/json'
