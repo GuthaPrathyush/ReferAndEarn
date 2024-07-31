@@ -7,8 +7,6 @@ import Register from './components/Register';
 import Footer from './components/Footer';
 import NavHeader from './components/NavHeader';
 import {Toaster} from 'react-hot-toast';
-import axios from 'axios';
-import {ClipLoader} from 'react-spinners';
 
 
 
